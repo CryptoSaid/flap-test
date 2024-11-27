@@ -18,6 +18,13 @@
       "headers": [
         { "key": "Content-Type", "value": "application/wasm" }
       ]
+    },
+    {
+      "source": "/Build/(.*)\\.wasm.gz",
+      "headers": [
+        { "key": "Content-Encoding", "value": "gzip" },
+        { "key": "Content-Type", "value": "application/wasm" }
+      ]
     }
   ]
 }
